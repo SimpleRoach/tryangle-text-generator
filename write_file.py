@@ -4,6 +4,6 @@ class Writer(object):
         self.string = string
 
     def write(self):
-        f = open(f'{self.name}.txt', 'w')
+        f = open(self.name + '.txt', 'w')
         f.write(self.string)
         f.close()
