@@ -3,7 +3,7 @@ import write_file as wr
 
 
 def main():
-    tryangle = tr.Tryangle(int(input('Enter a tryangle number: ')))
+    tryangle = tr.Tryangle(int(input('Enter a tryangle size: ')))
     tryangle.generate_tryangle()
     write = wr.Writer(input("Enter a file name: "), tryangle.result())
     write.write()
