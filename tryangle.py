@@ -9,9 +9,13 @@ class Tryangle:
             self.tryangle.append(i)
         return self.tryangle
 
-    def result (self):
-        for i in range self.tryangle:
-            for j in range (self.tryangle[:i+1]):
+    def result(self):
+        for i in self.tryangle:
+            for j in self.tryangle[:i+1]:
                 self.string += str(j) + "\t"
             self.string += "\n"
         return self.string
+
+test = Tryangle(int(input("Enter size of tryangle: ")))
+test.generate_tryangle()
+print(test.result())
