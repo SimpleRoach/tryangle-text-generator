@@ -15,7 +15,3 @@ class Tryangle:
                 self.string += str(j) + "\t"
             self.string += "\n"
         return self.string
-
-test = Tryangle(int(input("Enter size of tryangle: ")))
-test.generate_tryangle()
-print(test.result())
